@@ -1,0 +1,139 @@
+/* Reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #f4f4f9; 
+}
+
+.container {
+    max-width: 400px;
+    width: 100%; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Slightly rounded corners */
+    background-color: #ffffff; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for elevation */
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.container p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.container input,
+.container button,
+.container a.button {
+
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    
+}
+
+.container input {
+    border: 1px solid #ccc;
+}
+
+.container button,
+.container a.button {
+    background-color: #4facfe;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container button:hover,
+.container a.button:hover {
+    background-color: #008cba;
+    transform: scale(1.05);
+}
+
+.confirmation-message {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+
+/* Form container */
+.form-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
+    text-align: center; /* Center text inside the box */
+}
+
+/* Form heading */
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Form inputs and button */
+.form-container input,
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-container input {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Button styling */
+.form-container button {
+    background-color: #4facfe;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-container button:hover {
+    background-color: #008cba;
+    transform: scale(1.05);
+}
+
+/* Confirmation message styling */
+.confirmation-message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #4caf50;
+    text-align: center;
+}
