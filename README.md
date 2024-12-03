@@ -6,14 +6,14 @@
  Eli Cohen
  Ron Jiang
  Jun Da Axel Teo
- Overview:
-## This is the final project for CS1660. The objective is to leverage Google Cloud Platform (GCP) services to build a
+ ## Overview:
+ This is the final project for CS1660. The objective is to leverage Google Cloud Platform (GCP) services to build a
  cloud-based application that incorporates at least three different cloud services (i.e. Cloud Storage, Compute Engine,
  Cloud Run, BigQuery, etc). These services do not need to be limited to the ones covered in the course, and the
  project can be developed using any programming language or framework.
  Each team will be responsible for choosing a project idea, developing the application, and deploying it on GCP.
 ## Project Description:
- Wedecided to go with the QR Code Class Attendance by introducing a system that generates and uses QR codes for
+ We decided to go with the QR Code Class Attendance by introducing a system that generates and uses QR codes for
  attendance tracking, minimizing time spent on attendance. This project provides an efficient and scalable
  cloud-based solution to record and store attendance data for events or classes.
  ## Rubric:
