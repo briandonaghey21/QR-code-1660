@@ -1,11 +1,11 @@
 # Cloud Computing Final Project- The Attendance Takers
 ## Project Title: QR Code Class Attendance Taker
 ### Group Members :
- Branden Lientz
- Brian Donaghey
- Eli Cohen
- Ron Jiang
- Jun Da Axel Teo
+ - Branden Lientz
+ - Brian Donaghey
+ - Eli Cohen
+ - Ron Jiang
+ - Jun Da Axel Teo
  ## Overview:
  This is the final project for CS1660. The objective is to leverage Google Cloud Platform (GCP) services to build a
  cloud-based application that incorporates at least three different cloud services (i.e. Cloud Storage, Compute Engine,
@@ -27,26 +27,31 @@
  A user can log in with his google account (firebase authentication) to access the dashboard.
  From the dashboard (cloud run/ app engine), the user can create new events.
  Each event will:
- (1) have a unique qr code tied to a webform with event-id as a url parameter (generated with google cloud functions).
+ - have a unique qr code tied to a webform with event-id as a url parameter (generated with google cloud functions).
  The attendance taker will display this qr code to allow people to mark their attendance.
- (2) track the names of people that have attended the event.
- Each webform will: (1) have the event-id has a parameter
- (2) have an input field for attendees to input their name
- (3) upon submission, store this record in the database
- Database to store qr code images (google cloud storage) OR
- qr code images can be generated each time on request to reduce storage
- Database to store events (Firestore)
- (1) creator
- (2) event id
- (3) event name
-(4) qr code url
- Database to store attendees (Firestore)
- (1) event id
- (2) attendee name
- Google Services used:
- (1) Cloud run/ app engine to run the app
- (2) Google cloud functions to generate qr code image from url
- (3) Firestore as database
- (4) Google cloud storage for qr code images (optional)
- (5) Some service to automate deployment of web app, so pushing code to GitHub will deploy the updated application
+ - track the names of people that have attended the event.
+
+Each webform will:
+ - have the event-id has a parameter
+ - have an input field for attendees to input their name
+ - upon submission, store this record in the database
+ 
+Database to store qr code images (google cloud storage) OR qr code images can be generated each time on request to reduce storage
+
+Database to store events (Firestore)
+ - creator
+ - event id
+ - event name
+ - qr code url
+
+Database to store attendees (Firestore)
+ - event id
+ - attendee name
+
+Google Services used:
+ - Cloud run/ app engine to run the app
+ - Google cloud functions to generate qr code image from url
+ - Firestore as database
+ - Google cloud storage for qr code images (optional)
+ - Some service to automate deployment of web app, so pushing code to GitHub will deploy the updated application
  automatically (Google cloud build)
