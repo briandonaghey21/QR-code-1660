@@ -18,13 +18,13 @@
  cloud-based solution to record and store attendance data for events or classes.
  ## Rubric:
  The project will be graded based on the following criteria:
- Usage of at least 3 GCP Services: (30 pts) The project should incorporate at least three different GCP services.
- Deployment Automation: (5 pts) The deployment process should be automated (that is, it should not require manual
+ - Usage of at least 3 GCP Services: (30 pts) The project should incorporate at least three different GCP services.
+ - Deployment Automation: (5 pts) The deployment process should be automated (that is, it should not require manual
  intervention).
- Presentation: (5 pts) The team will demo the project to the class, explaining the problem it aims to solve, the
+ - Presentation: (5 pts) The team will demo the project to the class, explaining the problem it aims to solve, the
  architecture, and the technologies used.
 ## Project Structure:
- Auser can log in with his google account (firebase authentication) to access the dashboard.
+ A user can log in with his google account (firebase authentication) to access the dashboard.
  From the dashboard (cloud run/ app engine), the user can create new events.
  Each event will:
  (1) have a unique qr code tied to a webform with event-id as a url parameter (generated with google cloud functions).
