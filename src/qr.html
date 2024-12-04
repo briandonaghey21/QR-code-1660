@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR</title>
     <link rel="stylesheet" href="css/qr_styles.css">
+    <script type="module" src="js/qr.js"></script>
 </head>
 
 <body>
-    <a href="teacher-view.html">GOT NOTHING HERE RIGHT NOW! CLICK TO GO BACK!</a>
+    <div class="container">
+        <button type="button" id ="qrGenerate">Generate</button>
+        <img id="qrCode">
+    </div>
+
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.4.4/qrcode.js" integrity="sha512-oxrVyBhqnzQ0BzuM0A/6dEIk0alz0p4SpDRaWvtuUoarIc8rnL5lVniHG5Dp21MRFojcQcmKHjaskNXhSaUPPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </html>
