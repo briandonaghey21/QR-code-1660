@@ -1,4 +1,4 @@
-/* Reset and box-sizing */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +20,9 @@ body {
     width: 100%; 
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 10px; /* Slightly rounded corners */
+    border-radius: 10px; 
     background-color: #ffffff; 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for elevation */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     text-align: center;
 }
 
@@ -80,26 +80,26 @@ body {
 }
 
 
-/* Form container */
+
 .form-container {
     max-width: 400px;
     width: 100%;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px; 
     background-color: #ffffff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
-    text-align: center; /* Center text inside the box */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
 }
 
-/* Form heading */
+
 .form-container h2 {
     margin-bottom: 20px;
     font-size: 1.5rem;
     color: #333;
 }
 
-/* Form inputs and button */
+
 .form-container input,
 .form-container button {
     width: 100%;
@@ -115,7 +115,7 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Button styling */
+
 .form-container button {
     background-color: #4facfe;
     color: white;
@@ -130,7 +130,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Confirmation message styling */
+
 .confirmation-message {
     margin-top: 20px;
     font-weight: bold;
