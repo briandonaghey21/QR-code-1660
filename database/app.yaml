@@ -1,0 +1,13 @@
+runtime: nodejs18
+
+env: standard
+
+instance_class: F2
+
+handlers:
+  - url: /static
+    static_dir: public/
+    
+  - url: /.*
+    script: auto
+
