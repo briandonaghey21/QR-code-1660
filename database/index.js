@@ -1,9 +1,13 @@
 const express = require('express');
+const cors = require('cors');
 const db = require('./firebase'); // Import the Firestore instance
 const admin = require('firebase-admin'); // Import Firebase Admin SDK
 
 const app = express();
 const port = process.env.PORT || 8080;
+
+// Enable CORS for all origins
+app.use(cors());
 
 app.use(express.json());
 
