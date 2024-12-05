@@ -1,7 +1,7 @@
 const form = document.getElementById('attendanceForm');
 const confirmationMessage = document.getElementById('confirmationMessage');
 
-// API function
+// api
 async function addData(collection, className, name) {
     const response = await fetch('https://cs1660-database.uc.r.appspot.com/data/cs1660-attendance', {
         method: 'POST',
@@ -22,7 +22,7 @@ async function addData(collection, className, name) {
     }
 }
 
-// Form submission handler
+
 form.addEventListener('submit', async (event) => {
     event.preventDefault(); // Prevent page reload
 

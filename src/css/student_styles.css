@@ -60,3 +60,31 @@ table th {
     border-radius: 5px;
     font-size: 18px;
 }
+
+.filter-container {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    background-color: #4facfe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
