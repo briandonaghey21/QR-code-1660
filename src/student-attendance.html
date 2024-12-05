@@ -11,6 +11,16 @@
 <body>
     <div class="container">
         <h1>Student Attendance List</h1>
+        <div class="filter-container">
+            <label for="date-filter">Filter by Date:</label>
+            <input type="date" id="date-filter" class="filter-input" />
+            
+            <label for="class-filter">Filter by Class:</label>
+            <select id="class-filter" class="filter-input">
+                <option value="">All Classes</option>
+            </select>
+            <button onclick="filterAttendance()" class="filter-button">Filter</button>
+        </div>
         <div class="attendance-container">
             <table id="attendance-list">
                 <thead>
@@ -21,13 +31,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                
                 </tbody>
             </table>
-            
         </div>
         <a href="teacher-view.html" class="return-button">Return to Main Page</a>
-    </div>
+    </div>    
+    
     <script src="js/attendance.js"></script>
 </body>
 
