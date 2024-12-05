@@ -52,6 +52,7 @@ app.get('/data/:collection/all', async (req, res) => {
     const data = snapshot.docs.map(doc => ({
       id: doc.id,
       ...doc.data(),
+      timestamp: doc.data().timestamp?.toDate() || null,
     }));
     res.status(200).json(data);
   } catch (error) {
@@ -75,6 +76,7 @@ app.get('/data/:collection/class/:className', async (req, res) => {
     const data = snapshot.docs.map(doc => ({
       id: doc.id,
       ...doc.data(),
+      timestamp: doc.data().timestamp?.toDate() || null,
     }));
     res.status(200).json(data);
   } catch (error) {
