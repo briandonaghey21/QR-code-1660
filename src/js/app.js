@@ -2,7 +2,7 @@ const form = document.getElementById('attendanceForm');
 const confirmationMessage = document.getElementById('confirmationMessage');
 
 // API function
-async function addData(className, name) {
+async function addData(collection, className, name) {
     const response = await fetch('https://cs1660-database.uc.r.appspot.com/data/cs1660-attendance', {
         method: 'POST',
         headers: {
@@ -39,7 +39,7 @@ form.addEventListener('submit', async (event) => {
     }
 
     try {
-        const success = await addData(myClass, name);
+        const success = await addData('attendance', myClass, name);
         if (success) {
             confirmationMessage.textContent = `Attendance recorded for ${name}.`;
             form.reset();
