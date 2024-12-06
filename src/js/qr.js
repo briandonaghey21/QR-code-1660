@@ -5,7 +5,7 @@ genButton.addEventListener("click", async () =>{
 
     genButton.style.display = "none";
 
-    const currURL = `${window.location.origin}/src/attendance-form.html`
+    const currURL = `${window.location.origin}/attendance-form.html`
     console.log("URL:", currURL);
 
     const qrCodeImage = await QRCode.toDataURL(currURL);
