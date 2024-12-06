@@ -1,0 +1,12 @@
+{
+    "name": "qr-code-app",
+    "version": "1.0.0",
+    "description": "QR Code App with Data Management",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2"
+    }
+  }
