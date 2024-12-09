@@ -22,20 +22,18 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px; 
     background-color: #ffffff; 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 16px gray; 
     text-align: center;
 }
 
 .container h1 {
     margin-bottom: 30px;
     font-size: 2rem;
-    color: #333;
 }
 
 .container p {
     margin-bottom: 30px;
     font-size: 1rem;
-    color: #555;
 }
 
 .container input,
@@ -79,8 +77,6 @@ body {
     color: #4caf50;
 }
 
-
-
 .form-container {
     max-width: 400px;
     width: 100%;
@@ -88,17 +84,14 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px; 
     background-color: #ffffff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 16px gray; 
     text-align: center; 
 }
-
 
 .form-container h2 {
     margin-bottom: 20px;
     font-size: 1.5rem;
-    color: #333;
 }
-
 
 .form-container input,
 .form-container button {
