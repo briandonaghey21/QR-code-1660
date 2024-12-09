@@ -7,7 +7,11 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 // Enable CORS for all origins
-app.use(cors());
+app.use(cors({
+    origin: ['https://qr-code-1660-344952569457.us-central1.run.app'], // Allowed origins
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+}));
 
 app.use(express.json());
 
