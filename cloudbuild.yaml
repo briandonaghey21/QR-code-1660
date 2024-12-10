@@ -5,7 +5,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/final-443717/qr-code-1660:$COMMIT_SHA', '.']
 
-  #Push image to Google Container Registry
+  #Push image to Cloud Build
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/final-443717/qr-code-1660:$COMMIT_SHA']
 
