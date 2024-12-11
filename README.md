@@ -30,6 +30,7 @@
  - have a unique qr code tied to a webform with event-id as a url parameter (generated with google cloud functions).
  The attendance taker will display this qr code to allow people to mark their attendance.
  - track the names of people that have attended the event.
+ - Deploy System on Cloud Run via a Trigger in Cloud Build whenever the repository changes.
 
 Each webform will:
  - have the event-id has a parameter
@@ -49,9 +50,9 @@ Database to store attendees (Firestore)
  - attendee name
 
 Google Services used:
- - Cloud run/ app engine to run the app
+ - Cloud run where the application is deployed
  - Google cloud functions to generate qr code image from url
  - Firestore as database
  - Google cloud storage for qr code images (optional)
- - Some service to automate deployment of web app, so pushing code to GitHub will deploy the updated application
- automatically (Google cloud build)
+ - Google Cloud Build to automate deployment of web app, so pushing code to GitHub will deploy the updated application
+ automatically to Cloud Run
