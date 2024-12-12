@@ -62,7 +62,7 @@ https://github.com/ekc33/QR-code-1660
 ### Video Demo:
 https://drive.google.com/file/d/1iVR9jLL7PuMD-12LNCXfAPs7jCNIjOJn/view?usp=sharing
 
-## Link to site if GCP credits did not run out:
+### Link to site if GCP credits did not run out:
 
 https://qr-code-1660-344952569457.us-central1.run.app/
 
