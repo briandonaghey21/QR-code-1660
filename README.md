@@ -25,41 +25,41 @@
  architecture, and the technologies used.
 ## Project Structure:
 A user can log in with his google account (firebase authentication) to access the dashboard. From the dashboard (cloud run/ app engine), the user can generate a qr code.The attendance taker will display this qr code to allow people to mark their attendance and track the names of people that have attended the event.
-# Each webform will:
+### Each webform will:
 - have the class ID has a parameter
  - have an input field for attendees to input their name
  - upon submission, store this record in the database
-# Firestore database to store student attendance
+### Firestore database to store student attendance
  - No-SQL database contains student attendance details (className, studentName, time)
  - Security keys ensure only authenticated APIs can interact with it
-# API Server deployed on GCP App Engine
+### API Server deployed on GCP App Engine
  - Provides API endpoints to read and write to database
  - App Engine provides easy deployment, scalability and security
-# Google Services used:
+### Google Services used:
  - Cloud run/ app engine to run the app
  - Google cloud functions to generate qr code image from url
  - Firestore as database
  - Google Cloud Build to automate deployment of web app, so pushing code to GitHub will deploy the updated application automatically
 ## Deployment
-# Firestore database
+### Firestore database
 We use Firestore, a No-SQL database, to store attendance data in the form of documents in a collection. The Firestore database was created through the GCP console. There is a service account with read/ edit permissions for the database and the service account credentials (provided through a serviceAccountKey.json file) are used to authenticate the API server. The serviceAccountKey.json file is not uploaded into this repository.
 
 
-# API Server on App Engine
+### API Server on App Engine
 The API server is responsible for handling HTTP requests and interacting with the Firestore database. The API server is developed using Node.js and Express, and deployed to Google Cloud Platform's App Engine.
 The API server is connected to the Firestore database via a service account, and it is authenticated with the serviceAccountKey.json. The API server provides endpoints to read and write to the database. The API server protects against unauthorized access by using Cross-Origin Resource Sharing (CORS) to allow only approved domains to make requests.
 The API server is deployed on GCP App Engine. The package.json file defines its dependencies, while the app.yaml file configures the App Engine Environment (runtime, memory, CPUs).
 
 
-# Cloud Run/Cloud Storage Deployment
+### Cloud Run/Cloud Storage Deployment
 To deploy the application, we used Cloud Run and set up a Cloud Build trigger connected to the GitHub repository. This trigger monitors changes to the main branch of the repository. Whenever a change is pushed, it automatically triggers a new build, which includes building a Docker image, pushing it to Google Container Registry, and deploying it to Cloud Run. The deployment process is defined and managed through the cloudbuild.yaml file, which outlines the steps that Cloud Build follows to build, push, and deploy the application.
 
 
-# Github Repository:
+### Github Repository:
 ekc33/QR-code-1660: Final Project for CS 1660
 
 
-# Video Demo:
+### Video Demo:
 https://drive.google.com/file/d/1iVR9jLL7PuMD-12LNCXfAPs7jCNIjOJn/view?usp=sharing
 
 
