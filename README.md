@@ -56,7 +56,7 @@ To deploy the application, we used Cloud Run and set up a Cloud Build trigger co
 
 
 ### Github Repository:
-ekc33/QR-code-1660: Final Project for CS 1660
+https://github.com/ekc33/QR-code-1660
 
 
 ### Video Demo:
